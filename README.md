@@ -1,5 +1,8 @@
 # BOOLEAN_FUNCTION_MINIMIZATION
-
+```
+NAME: MIRTYUNJAY S
+REGISTER NO: 24013065
+```
 **AIM:**
 
 To implement the given logic function verify its operation in Quartus using Verilog programming.
@@ -33,25 +36,35 @@ Hardware – PCs, Cyclone II , USB flasher
 
 **Program:**
 ```
-module exp1a(a,b,y1,y2,y3,y4,y5,y6,y7);
-input a,b;
-output y1,y2,y3,y4,y5,y6,y7;
-and(y1,a,b,);
-or(y2,a,b);
-not(y3,a,b);
-xor(y4,a,b);
-xnor(y5,a,b);
-nand(y6,a,b);
-nor(y7,a,b);
+module exp2
+(A, B, C, D, W, X, Y, Z, F1, F2);
+input A,B,C,D,W,X,Y,Z;
+wire x1, x2,x3,x4, x5, x6,x7, x8, x9, x10;
+output F1, F2;
+assign x1=(~A) & (~B) & (~C)&(~D);
+assign x2=(A)&(~C)&(~D);
+assign x3=(~B)&(C)&(~D);
+assign x4=(~A) & (B)&(C)&(D);
+assign x5=(B)&(~C)&(D);
+assign x6=(X)&(~Y)&(Z);
+assign x7=(~X)&(~Y)&(Z);
+assign x8=(~W)&(X)&(Y);
+assign x9=(W)&(~X)&(Y);
+assign x10=(W)&(X)&(Y);
+assign F1=|X1|X2|X3|X4|X5;
+assign F2=X6|X7|X8|X|X10;
 endmodule
+
 ```
 
 
 **RTL realization**
+![image](https://github.com/user-attachments/assets/e958522f-529b-4642-984b-8b8bc316a44f)
 
 **Output:**
 
 **RTL**
+![image](https://github.com/user-attachments/assets/a271afb5-fbbe-4f1e-92e7-cf298495fa5e)
 
 **Timing Diagram**
 
