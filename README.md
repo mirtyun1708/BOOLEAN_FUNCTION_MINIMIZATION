@@ -35,38 +35,19 @@ Hardware – PCs, Cyclone II , USB flasher
 
 
 **Program:**
-```
-module exp2
-(A, B, C, D, W, X, Y, Z, F1, F2);
-input A,B,C,D,W,X,Y,Z;
-wire x1, x2,x3,x4, x5, x6,x7, x8, x9, x10;
-output F1, F2;
-assign x1=(~A) & (~B) & (~C)&(~D);
-assign x2=(A)&(~C)&(~D);
-assign x3=(~B)&(C)&(~D);
-assign x4=(~A) & (B)&(C)&(D);
-assign x5=(B)&(~C)&(D);
-assign x6=(X)&(~Y)&(Z);
-assign x7=(~X)&(~Y)&(Z);
-assign x8=(~W)&(X)&(Y);
-assign x9=(W)&(~X)&(Y);
-assign x10=(W)&(X)&(Y);
-assign F1=|X1|X2|X3|X4|X5;
-assign F2=X6|X7|X8|X|X10;
-endmodule
 
-```
+![Screenshot 2024-12-03 091823](https://github.com/user-attachments/assets/c2edc927-cd12-424c-b3ab-b3160af62393)
 
 
 **RTL realization**
-![image](https://github.com/user-attachments/assets/e958522f-529b-4642-984b-8b8bc316a44f)
+
+![Screenshot 2024-12-03 092107](https://github.com/user-attachments/assets/09b36e3d-04d8-48ce-860b-5737846a51e4)
 
 **Output:**
 
 **RTL**
-![image](https://github.com/user-attachments/assets/a271afb5-fbbe-4f1e-92e7-cf298495fa5e)
 
-**Timing Diagram**
+![Screenshot 2024-12-03 092229](https://github.com/user-attachments/assets/b36aa8c8-4862-47e6-a45f-61ecf24ba9d8)
 
 **Result:**
 
